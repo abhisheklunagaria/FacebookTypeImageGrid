@@ -13,16 +13,16 @@
 
 There are common logic for manage colspan and rowspan
 
-        `ItemImage i = new ItemImage(4,Image4,Image4);
+        ItemImage i = new ItemImage(4,Image4,Image4);
         int colSpan = Math.random() < 0.2f ? 2 : 1;
         int rowSpan = colSpan;
         i.setColumnSpan(colSpan);
         i.setRowSpan(rowSpan);
-        i.setPosition( currentOffset + 3);`
+        i.setPosition( currentOffset + 3);
 
 in childview's Adapter AsymmetricItem Type is necessary
 
-` @Override 
+`@Override 
  public AsymmetricItem getItem(int position) {
       return (AsymmetricItem) items.get(position);
     }`
