@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.at.facebooktypeimagegrid.Assymetric.AsymmetricRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

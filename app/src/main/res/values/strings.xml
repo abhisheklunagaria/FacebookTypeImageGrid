@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FacebookTypeImageGrid</string>
+    <string name="title"><![CDATA[ <font color=#000000 size=\'28\'><b>%1$s </b></font> <font color=#7e7e7e size=\'18\'>added %2$s new photos</font>]]></string>
+
+</resources>

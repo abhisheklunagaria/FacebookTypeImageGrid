@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rlParent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivProfile"
+                    android:layout_toRightOf="@+id/ivProfile"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:text="Abhi Patel added 7 new photos Abhi Patel added 7 new photos"
+                    android:textColor="#000000"
+
+                     />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_toRightOf="@+id/ivProfile"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="16 mins ago"
+                    android:textColor="#7e7e7e"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.at.facebooktypeimagegrid.Assymetric.AsymmetricRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:gravity="center"
+                android:listSelector="#00000000"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
